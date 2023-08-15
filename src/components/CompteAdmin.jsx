@@ -83,8 +83,7 @@ const CompteAdmin = () => {
         },
       })
         .then((res) => {
-          console.log(res);
-          setClients(res.data.list);
+          setClients(res.data.liste);
           setAlert({ type: "success", message: "Suppression réussi!" });
         })
         .catch((err) => {
